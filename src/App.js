@@ -87,21 +87,20 @@ class App extends Component {
 
   getResults() {
     const answersCount = this.state.answersCount;
-    const answersCountKeys = Object.keys(answersCount);
-    const answersCountValues = answersCountKeys.map(key => answersCount[key]);
-    const maxAnswerCount = Math.max.apply(null, answersCountValues);
 
-    return answersCountKeys.filter(key => answersCount[key] === maxAnswerCount);
+    // Results debugging check
+    console.log("AnswerCount Object:", answersCount);
+    console.log("AnswerCount Keys:", Object.keys(answersCount));
+    console.log("AnswerCount Values:", Object.values(answersCount));
+    console.log("AnswerCount [Correct]Key:", answersCount["Correct"])
+    console.log('User State:', this.state.user)
+
+    return answersCount["Correct"]
   }
 
   setResults(result) {
-    if (result.length === 1) {
-      this.setState({ result: result[0] });
-    } else {
-      this.setState({ result: 'Undetermined' });
-    }
+      return this.setState({ result: result });
   }
-
   renderQuiz() {
     return (
       <Quiz
