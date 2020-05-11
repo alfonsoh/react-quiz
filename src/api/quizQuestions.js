@@ -1,86 +1,86 @@
 var quizQuestions = [
   {
-      question: "What franchise would you rather play a game from?",
+      question: "What 1 + 1",
       answers: [
           {
-              type: "Microsoft",
-              content: "Halo"
+              type: "Correct",
+              content: "2"
           },
           {
-              type: "Nintendo",
-              content: "Pokemon"
+              type: "Wrong1",
+              content: "4"
           },
           {
-              type: "Sony",
-              content: "Uncharted"
+              type: "Wrong2",
+              content: "5"
           }
       ]
   },
   {
-      question: "Which console would you prefer to play with friends?",
+      question: "What 2 + 2",
       answers: [
           {
-              type: "Microsoft",
-              content: "X-Box"
+              type: "Correct",
+              content: "4"
           },
           {
-              type: "Nintendo",
-              content: "Nintendo 64"
+              type: "Wrong1",
+              content: "32"
           },
           {
-              type: "Sony",
-              content: "Playstation 1"
+              type: "Wrong2",
+              content: "22"
           }
       ]
   },
   {
-      question: "Which of these racing franchises would you prefer to play a game from?",
+      question: "Whats 4 + 4",
       answers: [
           {
-              type: "Microsoft",
-              content: "Forza"
+              type: "Correct",
+              content: "8"
           },
           {
-              type: "Nintendo",
-              content: "Mario Kart"
+              type: "Wrong1",
+              content: "23"
           },
           {
-              type: "Sony",
-              content: "Gran Turismo"
+              type: "Wrong2",
+              content: "14"
           }
       ]
   },
   {
-      question: "Which of these games do you think is best?",
+      question: "What 4 + 12",
       answers: [
           {
-              type: "Microsoft",
-              content: "BioShock"
+              type: "Wrong1",
+              content: "23"
           },
           {
-              type: "Nintendo",
-              content: "The Legend of Zelda: Ocarina of Time"
+              type: "Correct",
+              content: "16"
           },
           {
-              type: "Sony",
-              content: "Final Fantasy VII"
+              type: "Wrong2",
+              content: "45"
           }
       ]
   },
   {
-      question: "What console would you prefer to own?",
+      question: "Bing Bong Boo Boo",
       answers: [
           {
-              type: "Microsoft",
-              content: "X-Box One"
+              type: "Wrong1",
+              content: "Ninja"
           },
           {
-              type: "Nintendo",
-              content: "Wii U"
+              type: "Wrong2",
+              content: "Gang"
           },
           {
-              type: "Sony",
-              content: "Playstation 4"
+              type: "Correct",
+              content: "asdasdasd"
           }
       ]
   }
