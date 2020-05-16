@@ -6,7 +6,7 @@ before_install:
   - docker build -t alfonsohooker/react-quiz -f Dockerfile . 
 
 script:
-  - docker run -e CI=true alfonsohooker/react-quiz npm run test
+  - docker run -e CI=true alfonsohooker/react-quiz npm run build
 deploy:
   edge: true 
   provider: elasticbeanstalk
