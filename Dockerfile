@@ -6,8 +6,6 @@ COPY package*.json ./
 
 RUN npm install
 
-apk add nodejs
-
 COPY . .
 
 RUN npm run build
