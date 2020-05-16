@@ -2,6 +2,7 @@ FROM node:alpine as builder
 
 WORKDIR '/app'
 
+# This copies the package.json file
 COPY package*.json ./
 
 RUN npm install
