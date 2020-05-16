@@ -1,0 +1,21 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t alfonsohooker/react-quiz -f Dockerfile . 
+
+script:
+  - docker run -e CI=true alfonsohooker/react-quiz npm run test
+deploy:
+  edge: true 
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "react-quiz"
+  env: "ReactQuiz-env"
+  bucket_name: "elasticbeanstalk-us-east-1-967195537723"
+  bucket_path: "react-quiz"
+  on:
+    branch: master
+  access_key_id: $access_key_id
+  secret_access_key: $secret_access_key
